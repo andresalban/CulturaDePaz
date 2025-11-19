@@ -441,143 +441,71 @@
     </section>
 
     <!-- Case Study (ICFES) Section -->
-    <section id="caso-icfes" class="py-16 bg-brand-cream hero-pattern">
-      <div class="max-w-4xl mx-auto px-6">
-        <div
-          class="bg-white rounded-xl shadow-2xl overflow-hidden border border-stone-200"
-        >
-          <div
-            class="bg-brand-brown p-5 text-white text-center font-serif font-bold text-xl md:text-2xl tracking-tight"
-          >
-            Análisis de Caso:(Saber Pro)
-          </div>
-          <div class="p-8 md:p-10">
-            <!-- Case Description -->
-            <div
-              class="mb-8 p-4 bg-brand-light rounded-lg border-l-4 border-brand-gold shadow-inner"
-            >
-              <h3 class="font-sans text-lg font-semibold text-brand-dark mb-3">
-                Contexto del Conflicto: Minería a Gran Escala
-              </h3>
-              <p class="text-stone-700 mb-4 leading-relaxed">
-                El gobierno de un país hizo estudios en el subsuelo de una
-                región rural poco habitada, los cuales concluyen que existe una
-                gran riqueza mineral del lugar. En consecuencia, la minería a
-                gran escala aparece como una importante fuente de ganancias,
-                dados los precios altos en el mercado mundial. El gobierno
-                considera que debe impulsar esta forma de hacer minería, aunque
-                implique una inversión en maquinaria y tecnología especializada,
-                que solo mano de obra calificada puede operar.
-              </p>
-              <p class="text-stone-700 leading-relaxed font-semibold">
-                Los pobladores de la región se oponen al proyecto minero, ya que
-                además del alto impacto ambiental, les preocupa la gran cantidad
-                de terrenos que se necesitarían para llevarlo a cabo.
-              </p>
+     <!-- Case Study (ICFES) Section -->
+        <section id="caso-icfes" class="py-16 bg-brand-cream hero-pattern">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-stone-200">
+                    <div class="bg-brand-brown p-5 text-white text-center font-serif font-bold text-xl md:text-2xl tracking-tight">
+                        Análisis de Caso: Competencias Ciudadanas (Saber Pro)
+                    </div>
+                    <div class="p-8 md:p-10">
+                        <!-- Case Description -->
+                        <div class="mb-8 p-4 bg-brand-light rounded-lg border-l-4 border-brand-gold shadow-inner">
+                            <h3 class="font-sans text-lg font-semibold text-brand-dark mb-3">Contexto del Conflicto: Minería a Gran Escala</h3>
+                            <p class="text-stone-700 mb-4 leading-relaxed">
+                                El gobierno de un país hizo estudios en el subsuelo de una región rural poco habitada, los cuales concluyen que existe una gran riqueza mineral del lugar. En consecuencia, la minería a gran escala aparece como una importante fuente de ganancias, dados los precios altos en el mercado mundial. El gobierno considera que debe impulsar esta forma de hacer minería, aunque implique una inversión en maquinaria y tecnología especializada, que solo mano de obra calificada puede operar.
+                            </p>
+                            <p class="text-stone-700 leading-relaxed font-semibold">
+                                Los pobladores de la región se oponen al proyecto minero, ya que además del alto impacto ambiental, les preocupa la gran cantidad de terrenos que se necesitarían para llevarlo a cabo.
+                            </p>
+                        </div>
+
+                        <!-- Question -->
+                        <div class="mb-8">
+                            <h4 class="font-serif text-2xl font-bold text-brand-brown mb-4">Pregunta ICFES:</h4>
+                            <p class="text-xl text-brand-dark font-medium mb-6">Ante este panorama, es posible que se presente un conflicto. ¿Cuál sería la causa?</p>
+                            
+                            <!-- Options Form -->
+                            <form id="icfes-form" class="space-y-4">
+                                <!-- Option A -->
+                                <label id="option-A" class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md">
+                                    <input type="radio" name="respuesta" value="A" class="mr-3 text-brand-gold focus:ring-brand-gold">
+                                    <span class="text-stone-800">A. El proyecto del gobierno puede traer beneficios en crecimiento económico, pero podría generar problemas sociales como el desempleo y el desplazamiento.</span>
+                                </label>
+                                <!-- Option B -->
+                                <label id="option-B" class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md">
+                                    <input type="radio" name="respuesta" value="B" class="mr-3 text-brand-gold focus:ring-brand-gold">
+                                    <span class="text-stone-800">B. El gobierno quiere favorecer intereses económicos de unos pocos en detrimento del bienestar de la mayoría.</span>
+                                </label>
+                                <!-- Option C -->
+                                <label id="option-C" class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md">
+                                    <input type="radio" name="respuesta" value="C" class="mr-3 text-brand-gold focus:ring-brand-gold">
+                                    <span class="text-stone-800">C. Los habitantes de la región no quieren compartir los recursos que pueden favorecer a toda la población del país y no solo a una región.</span>
+                                </label>
+                                <!-- Option D -->
+                                <label id="option-D" class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md">
+                                    <input type="radio" name="respuesta" value="D" class="mr-3 text-brand-gold focus:ring-brand-gold">
+                                    <span class="text-stone-800">D. El progreso económico y tecnológico implica algunos sacrificios de la población de una región inviable económicamente.</span>
+                                </label>
+                                
+                                <button type="submit" class="w-full mt-6 bg-brand-gold text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-brown transition duration-300 shadow-xl transform hover:scale-[1.01]">
+                                    Verificar Respuesta
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Result Message (Hidden by default) -->
+                        <div id="result-container" class="mt-8">
+                            <div id="result-message" class="result-message p-6 rounded-lg hidden shadow-inner">
+                                <h5 class="font-bold text-lg mb-2 flex items-center gap-2" id="result-title"></h5>
+                                <p id="result-rationale" class="text-sm"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
-            <!-- Question -->
-            <div class="mb-8">
-              <h4 class="font-serif text-2xl font-bold text-brand-brown mb-4">
-                Pregunta ICFES:
-              </h4>
-              <p class="text-xl text-brand-dark font-medium mb-6">
-                Ante este panorama, es posible que se presente un conflicto.
-                ¿Cuál sería la causa?
-              </p>
-
-              <!-- Options Form -->
-              <form id="icfes-form" class="space-y-4">
-                <!-- Option A -->
-                <label
-                  class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md"
-                >
-                  <input
-                    type="radio"
-                    name="respuesta"
-                    value="A"
-                    class="mr-3 text-brand-gold focus:ring-brand-gold"
-                  />
-                  <span class="text-stone-800"
-                    >A. El proyecto del gobierno puede traer beneficios en
-                    crecimiento económico, pero podría generar problemas
-                    sociales como el desempleo y el desplazamiento.</span
-                  >
-                </label>
-                <!-- Option B -->
-                <label
-                  class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md"
-                >
-                  <input
-                    type="radio"
-                    name="respuesta"
-                    value="B"
-                    class="mr-3 text-brand-gold focus:ring-brand-gold"
-                  />
-                  <span class="text-stone-800"
-                    >B. El gobierno quiere favorecer intereses económicos de
-                    unos pocos en detrimento del bienestar de la mayoría.</span
-                  >
-                </label>
-                <!-- Option C -->
-                <label
-                  class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md"
-                >
-                  <input
-                    type="radio"
-                    name="respuesta"
-                    value="C"
-                    class="mr-3 text-brand-gold focus:ring-brand-gold"
-                  />
-                  <span class="text-stone-800"
-                    >C. Los habitantes de la región no quieren compartir los
-                    recursos que pueden favorecer a toda la población del país y
-                    no solo a una región.</span
-                  >
-                </label>
-                <!-- Option D -->
-                <label
-                  class="block cursor-pointer p-4 bg-white border border-stone-300 rounded-lg hover:bg-brand-cream transition shadow-md"
-                >
-                  <input
-                    type="radio"
-                    name="respuesta"
-                    value="D"
-                    class="mr-3 text-brand-gold focus:ring-brand-gold"
-                  />
-                  <span class="text-stone-800"
-                    >D. El progreso económico y tecnológico implica algunos
-                    sacrificios de la población de una región inviable
-                    económicamente.</span
-                  >
-                </label>
-
-                <button
-                  type="submit"
-                  class="w-full mt-6 bg-brand-gold text-white px-6 py-3 rounded-lg font-bold hover:bg-brand-brown transition duration-300 shadow-xl transform hover:scale-[1.01]"
-                >
-                  Verificar Respuesta
-                </button>
-              </form>
-            </div>
-
-            <!-- Result Message (Hidden by default) -->
-            <div id="result-container" class="mt-8">
-              <div
-                id="result-message"
-                class="result-message p-6 rounded-lg hidden shadow-inner"
-              >
-                <h5
-                  class="font-bold text-lg mb-2 flex items-center gap-2"
-                  id="result-title"
-                ></h5>
-                <p id="result-rationale" class="text-sm"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
     <!-- Video Resumen -->
     <section
@@ -666,5 +594,81 @@
         </div>
       </div>
     </footer>
+    <script>
+        document.getElementById('icfes-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const selectedOption = document.querySelector('input[name="respuesta"]:checked');
+            const resultMessage = document.getElementById('result-message');
+            const resultTitle = document.getElementById('result-title');
+            const resultRationale = document.getElementById('result-rationale');
+            const options = ['A', 'B', 'C', 'D'];
+            const correctAnswer = 'A'; // La respuesta correcta es A
+
+            // 1. Reset previous highlights
+            options.forEach(opt => {
+                const label = document.getElementById(`option-${opt}`);
+                label.classList.remove('bg-green-100', 'bg-red-100', 'border-green-400', 'border-red-400', 'ring-2', 'ring-green-500');
+                label.querySelector('span').classList.remove('font-bold');
+            });
+
+
+            if (!selectedOption) {
+                // Use a custom message box instead of alert()
+                // A better approach would be to display a temporary message on the page itself.
+                resultMessage.className = `result-message p-6 rounded-lg block bg-yellow-100 text-yellow-800 border-yellow-400`;
+                resultTitle.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Atención';
+                resultRationale.textContent = 'Por favor, selecciona una opción antes de verificar.';
+                return;
+            }
+
+            const selectedValue = selectedOption.value;
+            const selectedLabel = document.getElementById(`option-${selectedValue}`);
+
+            // Define rationales for each option
+            const rationales = {
+                A: { // Correct Answer
+                    title: '<i class="fa-solid fa-circle-check"></i> ¡Respuesta Correcta!',
+                    rationale: 'Esta es la causa principal del conflicto. El proyecto minero ofrece crecimiento económico para el país, pero ignora los intereses y genera riesgos (desempleo por la falta de mano de obra local y desplazamiento por la necesidad de terrenos) para los pobladores de la región, creando un choque entre el bien común y los intereses particulares.',
+                    class: 'bg-green-100 text-green-800 border-green-400'
+                },
+                B: {
+                    title: '<i class="fa-solid fa-circle-xmark"></i> Respuesta Incorrecta. Intenta de nuevo.',
+                    rationale: 'Aunque el conflicto se relaciona con intereses económicos, esta opción es demasiado absoluta. El conflicto es más complejo, involucrando el impacto ambiental y social (desempleo, desplazamiento), no solo el favoritismo simple.',
+                    class: 'bg-red-100 text-red-800 border-red-400'
+                },
+                C: {
+                    title: '<i class="fa-solid fa-circle-xmark"></i> Respuesta Incorrecta. Intenta de nuevo.',
+                    rationale: 'Esta opción revierte la lógica del problema. El texto indica que los pobladores se oponen por las consecuencias negativas (ambientales y de terrenos), no por una falta de solidaridad con el país. Es una suposición que va más allá del caso.',
+                    class: 'bg-red-100 text-red-800 border-red-400'
+                },
+                D: {
+                    title: '<i class="fa-solid fa-circle-xmark"></i> Respuesta Incorrecta. Intenta de nuevo.',
+                    rationale: 'Esta opción justifica el daño, pero no identifica la causa del conflicto. La causa reside en el choque de intereses entre el modelo de desarrollo (gobierno) y la protección de los derechos y el territorio (pobladores).',
+                    class: 'bg-red-100 text-red-800 border-red-400'
+                }
+            };
+
+            const data = rationales[selectedValue];
+            
+            // 2. Apply styles and content to the message
+            resultMessage.className = `result-message p-6 rounded-lg block shadow-inner ${data.class}`;
+            resultTitle.innerHTML = data.title;
+            resultRationale.textContent = data.rationale;
+            
+            // 3. Highlight the selected answer (Green for correct, Red for incorrect)
+            if (selectedValue === correctAnswer) {
+                selectedLabel.classList.add('bg-green-100', 'border-green-400', 'ring-2', 'ring-green-500');
+                selectedLabel.querySelector('span').classList.add('font-bold');
+            } else {
+                selectedLabel.classList.add('bg-red-100', 'border-red-400');
+                
+                // 4. Highlight the correct answer permanently if the selected one was wrong
+                const correctLabel = document.getElementById(`option-${correctAnswer}`);
+                correctLabel.classList.add('bg-green-100', 'border-green-400', 'ring-2', 'ring-green-500');
+                correctLabel.querySelector('span').classList.add('font-bold');
+            }
+        });
+    </script>
   </body>
 </html>
